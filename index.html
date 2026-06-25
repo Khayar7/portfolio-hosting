@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khayar | Développeur & Business Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Khayar</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Changer de mode">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        </button>
+    </nav>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Khayar</h1>
+        <p class="subtitle">Développeur Web • Business Developer • Gestionnaire de Stocks</p>
+        <p class="tagline">
+            Transformer des idées complexes en solutions digitales modernes, performantes et utiles pour les entreprises.
+        </p>
+        <a href="#projects" class="cta-button">Voir mes projets</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2>À propos</h2>
+        <p>
+            Je m'appelle Khayar, développeur web, gestionnaire de stocks et business developer.
+            Je suis également business developer chez <strong>InnoLink</strong>, une société spécialisée dans la création de solutions digitales pour les entreprises.
+            <br><br>
+            Je suis co-associé de <strong>Tentag Card</strong>, une entreprise qui conçoit et déploie des cartes de visite NFC intelligentes.
+            <br><br>
+            Mon objectif est de créer des solutions digitales utiles, simples et efficaces pour les entreprises modernes.
+        </p>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Mes Projets</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>E-commerce Agriculture</h3>
+                <p>Création d’une plateforme e-commerce pour la vente de produits agricoles.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>E-commerce Poissons Séchés</h3>
+                <p>Développement d’une boutique en ligne spécialisée dans la distribution de poissons séchés.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <p>Création d’une application de gestion de tâches pour équipes et entreprises.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Me Contacter</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Message"></textarea>
+            <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Khayar. Tous droits réservés.</p>
+</footer>
+
+<script>
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+</script>
+
+</body>
+</html>
